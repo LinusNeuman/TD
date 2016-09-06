@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TD", "TD\TD.csproj", "{247A0040-816B-4E14-8BBC-C76CAED82F47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDMapEditor", "TDMapEditor\TDMapEditor.csproj", "{4C7642C9-89C3-4FF9-B969-1241FD965E08}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{247A0040-816B-4E14-8BBC-C76CAED82F47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{247A0040-816B-4E14-8BBC-C76CAED82F47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{247A0040-816B-4E14-8BBC-C76CAED82F47}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{247A0040-816B-4E14-8BBC-C76CAED82F47}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{247A0040-816B-4E14-8BBC-C76CAED82F47}.Debug|x86.Build.0 = Debug|Any CPU
+		{247A0040-816B-4E14-8BBC-C76CAED82F47}.Debug|x86.Deploy.0 = Debug|Any CPU
+		{247A0040-816B-4E14-8BBC-C76CAED82F47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{247A0040-816B-4E14-8BBC-C76CAED82F47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{247A0040-816B-4E14-8BBC-C76CAED82F47}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{247A0040-816B-4E14-8BBC-C76CAED82F47}.Release|x86.ActiveCfg = Release|Any CPU
+		{247A0040-816B-4E14-8BBC-C76CAED82F47}.Release|x86.Build.0 = Release|Any CPU
+		{247A0040-816B-4E14-8BBC-C76CAED82F47}.Release|x86.Deploy.0 = Release|Any CPU
+		{4C7642C9-89C3-4FF9-B969-1241FD965E08}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{4C7642C9-89C3-4FF9-B969-1241FD965E08}.Debug|x86.ActiveCfg = Debug|x86
+		{4C7642C9-89C3-4FF9-B969-1241FD965E08}.Debug|x86.Build.0 = Debug|x86
+		{4C7642C9-89C3-4FF9-B969-1241FD965E08}.Release|Any CPU.ActiveCfg = Release|x86
+		{4C7642C9-89C3-4FF9-B969-1241FD965E08}.Release|x86.ActiveCfg = Release|x86
+		{4C7642C9-89C3-4FF9-B969-1241FD965E08}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

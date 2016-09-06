@@ -1,0 +1,132 @@
+{
+  "Nodes": [
+    {
+      "myPositionX": 256,
+      "myPositionY": 1024
+    },
+    {
+      "myPositionX": 256,
+      "myPositionY": 896
+    },
+    {
+      "myPositionX": 256,
+      "myPositionY": 768
+    },
+    {
+      "myPositionX": 256,
+      "myPositionY": 640
+    },
+    {
+      "myPositionX": 256,
+      "myPositionY": 512
+    },
+    {
+      "myPositionX": 384,
+      "myPositionY": 512
+    },
+    {
+      "myPositionX": 512,
+      "myPositionY": 512
+    },
+    {
+      "myPositionX": 640,
+      "myPositionY": 512
+    },
+    {
+      "myPositionX": 768,
+      "myPositionY": 512
+    },
+    {
+      "myPositionX": 768,
+      "myPositionY": 640
+    },
+    {
+      "myPositionX": 768,
+      "myPositionY": 768
+    },
+    {
+      "myPositionX": 768,
+      "myPositionY": 896
+    },
+    {
+      "myPositionX": 896,
+      "myPositionY": 896
+    },
+    {
+      "myPositionX": 1024,
+      "myPositionY": 896
+    },
+    {
+      "myPositionX": 1152,
+      "myPositionY": 896
+    },
+    {
+      "myPositionX": 1280,
+      "myPositionY": 896
+    },
+    {
+      "myPositionX": 1280,
+      "myPositionY": 768
+    },
+    {
+      "myPositionX": 1280,
+      "myPositionY": 640
+    },
+    {
+      "myPositionX": 1280,
+      "myPositionY": 512
+    },
+    {
+      "myPositionX": 1280,
+      "myPositionY": 384
+    },
+    {
+      "myPositionX": 1280,
+      "myPositionY": 256
+    },
+    {
+      "myPositionX": 1280,
+      "myPositionY": 128
+    },
+    {
+      "myPositionX": 1152,
+      "myPositionY": 128
+    },
+    {
+      "myPositionX": 1024,
+      "myPositionY": 128
+    },
+    {
+      "myPositionX": 896,
+      "myPositionY": 128
+    },
+    {
+      "myPositionX": 768,
+      "myPositionY": 128
+    },
+    {
+      "myPositionX": 640,
+      "myPositionY": 128
+    },
+    {
+      "myPositionX": 512,
+      "myPositionY": 128
+    },
+    {
+      "myPositionX": 384,
+      "myPositionY": 128
+    },
+    {
+      "myPositionX": 256,
+      "myPositionY": 128
+    },
+    {
+      "myPositionX": 128,
+      "myPositionY": 128
+    },
+    {
+      "myPositionX": 0,
+      "myPositionY": 128
+    }
+  ]
+}

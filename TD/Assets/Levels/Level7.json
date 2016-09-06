@@ -1,0 +1,100 @@
+{
+  "Nodes": [
+    {
+      "myPositionX": 0,
+      "myPositionY": 512
+    },
+    {
+      "myPositionX": 128,
+      "myPositionY": 512
+    },
+    {
+      "myPositionX": 256,
+      "myPositionY": 512
+    },
+    {
+      "myPositionX": 256,
+      "myPositionY": 384
+    },
+    {
+      "myPositionX": 256,
+      "myPositionY": 256
+    },
+    {
+      "myPositionX": 256,
+      "myPositionY": 128
+    },
+    {
+      "myPositionX": 384,
+      "myPositionY": 128
+    },
+    {
+      "myPositionX": 512,
+      "myPositionY": 128
+    },
+    {
+      "myPositionX": 640,
+      "myPositionY": 128
+    },
+    {
+      "myPositionX": 640,
+      "myPositionY": 256
+    },
+    {
+      "myPositionX": 640,
+      "myPositionY": 384
+    },
+    {
+      "myPositionX": 640,
+      "myPositionY": 512
+    },
+    {
+      "myPositionX": 640,
+      "myPositionY": 640
+    },
+    {
+      "myPositionX": 640,
+      "myPositionY": 768
+    },
+    {
+      "myPositionX": 640,
+      "myPositionY": 896
+    },
+    {
+      "myPositionX": 768,
+      "myPositionY": 896
+    },
+    {
+      "myPositionX": 896,
+      "myPositionY": 896
+    },
+    {
+      "myPositionX": 896,
+      "myPositionY": 768
+    },
+    {
+      "myPositionX": 896,
+      "myPositionY": 640
+    },
+    {
+      "myPositionX": 896,
+      "myPositionY": 512
+    },
+    {
+      "myPositionX": 896,
+      "myPositionY": 384
+    },
+    {
+      "myPositionX": 896,
+      "myPositionY": 256
+    },
+    {
+      "myPositionX": 896,
+      "myPositionY": 128
+    },
+    {
+      "myPositionX": 896,
+      "myPositionY": 0
+    }
+  ]
+}
