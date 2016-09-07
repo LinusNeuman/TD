@@ -22,10 +22,14 @@ namespace TD
 
         EnemyManager myEnemyManager;
 
+        TowerManager myTowerManager;
+
         int myCurrentWave = 1;
         int myMaxWaves;
 
         float myCurrentWaveTime = 0;
+
+        float myWaveRate;
 
         // When level select is done, level select is supposed to make a new playstate with the level id
         // Level select is supposed to pass on the selected towers for the level
@@ -38,6 +42,8 @@ namespace TD
             myEnemyManager = new EnemyManager(myLevel.GetLevelPath().GetPath());
 
             myMaxWaves = 10;
+
+            myWaveRate = 30000;
         }
 
         public override void Load(ContentManager content)
@@ -54,12 +60,13 @@ namespace TD
         public override eStackReturnValue Update(float aDeltaTime, ProxyStateStack aStateStack)
         {
             myLevel.Update(aDeltaTime);
-            myPlayTabGUI.Update(aDeltaTime);
-
+            
             myEnemyManager.Update(aDeltaTime);
 
+            myPlayTabGUI.Update(aDeltaTime);
+
             myCurrentWaveTime += aDeltaTime;
-            if(myCurrentWaveTime >= 2000) // This is not elapsed time but delta time, so... Should change all deltatimes to gameTime instead so that I can use elapsed time // 2000 frames is around 32 seconds
+            if(myCurrentWaveTime >= myWaveRate)
             {
                 if(myCurrentWave >= myMaxWaves)
                 {
@@ -79,9 +86,10 @@ namespace TD
         public override void Draw(SpriteBatch spriteBatch)
         {
             myLevel.Draw(spriteBatch);
-            myPlayTabGUI.Draw(spriteBatch);
 
             myEnemyManager.Draw(spriteBatch);
+
+            myPlayTabGUI.Draw(spriteBatch);
         }
 
     }

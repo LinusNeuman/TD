@@ -25,13 +25,18 @@ namespace TD
 
         int myEnemiesLeftToSpawn = 0;
 
-        float myTimeSinceSpawn = 30;
+        float mySpawnRate;
+
+        float myTimeSinceSpawn;
 
         public EnemySpawner(List<Node> aMap)
         {
             myEnemies = new List<Enemy>();
 
             myMap = aMap;
+
+            mySpawnRate = 1500; // Load this from the level.
+            myTimeSinceSpawn = mySpawnRate;
         }
 
         public void Load(ContentManager content)
@@ -51,19 +56,19 @@ namespace TD
                 }
             }
 
-            // Spawn enemies if neccesarry
+            // Spawn enemies if unnecessary
             if (myIsSpawningEnemies == false)
             {
                 return;
             }
 
-            if(myEnemiesLeftToSpawn > 0 && myTimeSinceSpawn > 30) // 50 frames = around 450ms
+            if(myEnemiesLeftToSpawn > 0 && myTimeSinceSpawn >= mySpawnRate) // 50 frames = around 450ms
             {
                 myEnemies.Add(new Enemy(myMap, myEnemyTexture));
                 --myEnemiesLeftToSpawn;
                 myTimeSinceSpawn = 0;
             }
-            else
+            else if (myEnemiesLeftToSpawn <= 0)
             {
                 myIsSpawningEnemies = false;
             }
