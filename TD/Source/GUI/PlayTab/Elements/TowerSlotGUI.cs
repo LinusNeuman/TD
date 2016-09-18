@@ -82,6 +82,13 @@ namespace TD
                 }
                 else if(tl.State == TouchLocationState.Released)
                 {
+                    // Player has chosen this location to place a tower.
+                    // Check if something is obstructing it, if not place a tower.
+                    if(myIsDragged == true)
+                    {
+
+                    }
+
                     myIsDragged = false;
                     myPosition = myOriginalPosition;
                 }
@@ -92,6 +99,12 @@ namespace TD
                         myPosition = tl.Position;
                     }
                 }
+            }
+
+            // Player is currently choosing a location to place a tower.
+            if(myIsDragged == true)
+            {
+                // In some way, represent graphically how the player can place the tower.
             }
         }
 
