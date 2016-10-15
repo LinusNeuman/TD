@@ -33,7 +33,11 @@ namespace TD
 
             mySlots = new List<TowerSlotGUI>();
 
-            if(someData.mySelectedTowers.Count > 0)
+
+            // tanky = myPosition = new Vector2(1724, 237);
+             // speedy =   myPosition = new Vector2(1724, 454);
+
+            if (someData.mySelectedTowers.Count > 0)
             {
                 for (int i = 0; i < someData.mySelectedTowers.Count; ++i)
                 {
@@ -41,16 +45,24 @@ namespace TD
                     {
                         case eTowerType.eSpeedy:
                             mySlots.Add(new SpeedyTowerGUI(i));
-                            mySlots[mySlots.Count - 1].Init(myMap);
+                            mySlots[mySlots.Count - 1].Init(myMap, new Vector2(1724, i * 211 + 237));
                             break;
                         case eTowerType.eTanky:
                             mySlots.Add(new TankyTowerGUI(i));
-                            mySlots[mySlots.Count - 1].Init(myMap);
+                            mySlots[mySlots.Count - 1].Init(myMap, new Vector2(1724, i * 211 + 237));
                             break;
                         default:
                             break;
                     }
                 }
+            }
+        }
+
+        public void AttachForwarded(TowerPlacementObserver aObserver)
+        {
+            for (int i = 0; i < mySlots.Count; ++i)
+            {
+                mySlots[i].Attach(aObserver);
             }
         }
 

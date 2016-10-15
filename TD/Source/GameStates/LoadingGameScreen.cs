@@ -49,22 +49,17 @@ namespace TD
             //    }
             //}
 
-            TouchCollection touchCollection = TouchPanel.GetState();
-            foreach(TouchLocation tl in touchCollection)
+            if(InputManager.GetInstance().GetState() == TouchLocationState.Pressed)
             {
-                if((tl.State == TouchLocationState.Pressed))
-                {
-                    Random rand = new Random();
-                    TowerSlotData tempData = new TowerSlotData();
-                    tempData.mySelectedTowers.Add(TowerSlotData.eTowerType.eTanky);
-                    tempData.mySelectedTowers.Add(TowerSlotData.eTowerType.eSpeedy);
-                    PlayState newState = new PlayState(rand.Next(1, 7), tempData);
-                    newState.SetContext(c);
-                    newState.Load(myContentManager);
-                    aStateStack.AddMainState(newState);
-                }
+                Random rand = new Random();
+                TowerSlotData tempData = new TowerSlotData();
+                tempData.mySelectedTowers.Add(TowerSlotData.eTowerType.eTanky);
+                tempData.mySelectedTowers.Add(TowerSlotData.eTowerType.eSpeedy);
+                PlayState newState = new PlayState(rand.Next(1, 7), tempData);
+                newState.SetContext(c);
+                newState.Load(myContentManager);
+                aStateStack.AddMainState(newState);
             }
-
 
             return eStackReturnValue.eStay;
         }

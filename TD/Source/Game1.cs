@@ -30,6 +30,8 @@ namespace TD
             graphics.SupportedOrientations = DisplayOrientation.LandscapeLeft | DisplayOrientation.LandscapeRight;
 
             myGameStateStack = new StateStack();
+
+            InputManager.CreateInstance();
         }
 
         /// <summary>
@@ -81,7 +83,7 @@ namespace TD
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            // TODO: Add your update logic here
+            InputManager.GetInstance().Update();
 
             myGameStateStack.Update(gameTime.ElapsedGameTime.Milliseconds);
 

@@ -39,11 +39,15 @@ namespace TD
 
             myPlayTabGUI = new PlayTabGUI(myLevel.GetLevelPath().GetPath(), someData);
 
+            myTowerManager = new TowerManager();
+
             myEnemyManager = new EnemyManager(myLevel.GetLevelPath().GetPath());
 
             myMaxWaves = 10;
 
             myWaveRate = 30000;
+
+            myPlayTabGUI.AttachForwarded(myTowerManager);
         }
 
         public override void Load(ContentManager content)
@@ -51,7 +55,7 @@ namespace TD
             myLevel.SetContext(c);
             myLevel.Load(content);
             myPlayTabGUI.Load(content);
-
+            myTowerManager.Load(content);
             myEnemyManager.Load(content);
 
             myEnemyManager.SendWave(myCurrentWave);
@@ -60,7 +64,9 @@ namespace TD
         public override eStackReturnValue Update(float aDeltaTime, ProxyStateStack aStateStack)
         {
             myLevel.Update(aDeltaTime);
-            
+
+            myTowerManager.Update(aDeltaTime);
+
             myEnemyManager.Update(aDeltaTime);
 
             myPlayTabGUI.Update(aDeltaTime);
@@ -86,6 +92,8 @@ namespace TD
         public override void Draw(SpriteBatch spriteBatch)
         {
             myLevel.Draw(spriteBatch);
+
+            myTowerManager.Draw(spriteBatch);
 
             myEnemyManager.Draw(spriteBatch);
 
